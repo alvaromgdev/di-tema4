@@ -1,0 +1,36 @@
+<h4 class="mb-3">Añadir personaje</h4>
+
+<form (ngSubmit)="agregarPersonaje()">
+
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      class="form-control"
+      placeholder="Ej. Vegeta"
+      [(ngModel)]="nombre"
+      required
+    >
+  </div>
+
+  <div class="mb-3">
+    <label for="poder" class="form-label">Poder</label>
+    <input
+      type="number"
+      id="poder"
+      name="poder"
+      class="form-control"
+      placeholder="Ej. 9000"
+      [(ngModel)]="poder"
+      required
+    >
+  </div>
+
+  <button type="submit" class="btn btn-primary w-100">
+    <i class="bi bi-plus-circle me-2"></i>
+    Agregar personaje
+  </button>
+
+</form>
