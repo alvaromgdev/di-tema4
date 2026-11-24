@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AddPersonaje {
 
   public nombre: string = '';
-  public poder: number = 0;
+  public fuerza: number = 0;
 
   agregarPersonaje(): void {
 
